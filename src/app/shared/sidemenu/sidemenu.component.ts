@@ -10,42 +10,54 @@ interface MenuItem {
   templateUrl: './sidemenu.component.html',
   styles: [
     `
-    li{
-      cursor:pointer;
-    }
-    `
+      li {
+        cursor: pointer;
+      }
+    `,
   ],
 })
 export class SidemenuComponent implements OnInit {
   templateMenu: MenuItem[] = [
     {
-      texto:"Básicos",
-      ruta:"./template/basicos"
+      texto: 'Básicos',
+      ruta: './template/basicos',
     },
     {
-      texto:"Dinámicos",
-      ruta:"./template/dinamicos"
+      texto: 'Dinámicos',
+      ruta: './template/dinamicos',
     },
     {
-      texto:"Switches",
-      ruta:"./template/switches"
-    }
+      texto: 'Switches',
+      ruta: './template/switches',
+    },
   ];
 
   reactiveMenu: MenuItem[] = [
     {
-      texto:"Básicos",
-      ruta:"./reactive/basicos"
+      texto: 'Básicos',
+      ruta: './reactive/basicos',
     },
     {
-      texto:"Dinámicos",
-      ruta:"./reactive/dinamicos"
+      texto: 'Dinámicos',
+      ruta: './reactive/dinamicos',
     },
     {
-      texto:"Switches",
-      ruta:"./reactive/switches"
-    }
+      texto: 'Switches',
+      ruta: './reactive/switches',
+    },
   ];
+
+  authMenu: MenuItem[] = [
+    {
+      texto: 'Registro',
+      ruta: './auth/registro',
+    },
+    {
+      texto: 'Login',
+      ruta: './auth/login',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
